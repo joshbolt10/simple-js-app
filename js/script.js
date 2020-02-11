@@ -1,4 +1,3 @@
-var pokemonRepository = (function () {
   var repository = [
     {
       name: 'Bulbasaur',
@@ -23,13 +22,13 @@ var pokemonRepository = (function () {
   ];
 
 for (i = 0; i < repository.length; i++) {
-  if (repository.height <= 1) {
+  if (repository.height > 1) {
     document.write(
-      repository.name + repository.height
+      repository.name, repository.height
     );
   } else {
     document.write(
-      repository.name + repository.height + "Wow, that's big!"
+      repository.name, repository.height, "Wow, that's big!"
     );
   }
 }
