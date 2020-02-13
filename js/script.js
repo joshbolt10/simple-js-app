@@ -22,13 +22,13 @@
   ];
 
 for (i = 0; i < repository.length; i++) {
-  if (repository.height > 1) {
-    document.write(
-      repository.name, repository.height
+  if (repository[i].height > 1) {
+    document.write (
+      repository[i].name, repository[i].height
     );
   } else {
-    document.write(
-      repository.name, repository.height, "Wow, that's big!"
+    document.write (
+      repository[i].name, repository[i].height, "Wow, that's big!"
     );
   }
 }
